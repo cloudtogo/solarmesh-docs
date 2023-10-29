@@ -1,4 +1,4 @@
-baseURL: https://www.aeraki.net/
+baseURL: https://solarmesh.cn/
 enableRobotsTxt: true
 
 theme: [docsy]
@@ -34,16 +34,16 @@ imaging:
 
 languages:
   en:
-    title: Aeraki Mesh
+    title: solarmesh
     description: >-
-      Manage any layer-7 protocols in a service mesh
+      An efficient visual microservice governance platform
     languageName: English
     contentDir: content/en
     weight: 1
   zh:
-    title: Aeraki Mesh
+    title: solarmesh
     description: >-
-      在服务网格中管理任何七层协议
+      一个高效可视化微服务治理平台
     languageName: 中文
     contentDir: content/zh
     weight: 1
@@ -61,11 +61,11 @@ markup:
 # Everything below this are Site Params
 
 params:
-  copyright: Aeraki Mesh Authors
+  copyright: CloudToGo.cn 深圳行云创新科技有限公司
   description: >-
-    Manage any layer-7 protocols in a service mesh
+    一个高效可视化微服务治理平台
 
-    # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
+    # Repository configuraion (URLs for in-page links to opening issues and suggesting changes)
   github_repo: https://github.com/aeraki-mesh/website
   github_branch: main
 
@@ -112,11 +112,11 @@ params:
       # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
       'yes': >-
         Glad to hear it! Please <a
-        href="https://github.com/aeraki-mesh/website/issues/new">tell us how we
+        href="https://github.com/mark8s/solarmesh-website/issues/new">tell us how we
         can improve</a>.
       'no': >-
         Sorry to hear that. Please <a
-        href="https://github.com/aeraki-mesh/website/issues/new">tell us how we
+        href="https://github.com/mark8s/solarmesh-website/issues/new">tell us how we
         can improve</a>.
 
     # Adds a reading time to the top of each doc.
