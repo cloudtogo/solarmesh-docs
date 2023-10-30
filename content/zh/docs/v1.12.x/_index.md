@@ -1,8 +1,8 @@
 ---
-title: v1.x 文档
+title: v1.12.x 文档
 cascade:
-  version: v1.x
-  versName: &name v1.x
+  version: v1.12.x
+  versName: &name v1.12.x
   git_version_tag: 1.x.x
   exclude_search: false
 linkTitle: *name

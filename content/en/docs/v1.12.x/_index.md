@@ -1,8 +1,8 @@
 ---
-title: v1.x docs
+title: v1.12.x docs
 cascade:
-  version: v1.x
-  versName: &name v1.x
+  version: v1.12.x
+  versName: &name v1.12.x
   git_version_tag: 1.x.x
   exclude_search: false
 linkTitle: *name

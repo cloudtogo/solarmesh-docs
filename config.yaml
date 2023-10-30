@@ -87,9 +87,9 @@ params:
   # This menu appears only if you have at least one [params.versions] set.
   version_menu: Versions
   versions:
-    latest: v1.x
+    latest: v1.12.x
     all:
-      - v1.x
+      - v1.12.x
     deprecation_warning: |-
       the documentation is no longer actively maintained.
         The page that you are viewing is the last archived version.
@@ -129,22 +129,20 @@ params:
   links:
     # End user relevant links. These will show up on left side of footer and in the community page if you have one.
     user:
-      - name: Slack
-        url: http://aeraki.slack.com/
-        icon: fab fa-slack
-      - name: Email
-        url: mailto:zhaohuabing@gmail.com
-        icon: fas fa-envelope
-      - name: Stack Overflow
-        url: https://stackoverflow.com/questions/tagged/aeraki
-        icon: fab fa-stack-overflow
+    #  - name: Slack
+    #    url: http://aeraki.slack.com/
+    #    icon: fab fa-slack
+
+    #  - name: Stack Overflow
+    #    url: https://stackoverflow.com/questions/tagged/aeraki
+    #    icon: fab fa-stack-overflow
     # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
     developer:
-      - name: Aeraki on GitHub
-        url: https://github.com/aeraki-mesh
-        icon: fab fa-github-square
-      - name: Aeraki.net on GitHub
-        url: https://github.com/aeraki-mesh/website
+      - name: Email
+        url: mailto:yileo2019@gmail.com
+        icon: fas fa-envelope
+      - name: SolarMesh on GitHub
+        url: https://github.com/mark8s/solarmesh-website
         icon: fab fa-github
   # [params.logos]
 
@@ -164,11 +162,11 @@ outputs:
 menu:
   main:
     - name: Docs
-      url: /docs/v1.x/
+      url: /docs/v1.12.x/
       weight: -10
     - name: Blog
       pageref: /blog/
     - name: Install
-      url: /docs/v1.x/install/
+      url: /docs/v1.12.x/install/
     #- name: Demo
     #  url: http://aeraki.zhaohuabing.com:3000/d/pgz7wp-Gz/aeraki-demo?orgId=1&refresh=10s&kiosk
