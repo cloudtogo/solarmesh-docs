@@ -1,6 +1,6 @@
-# aeraki.net
+# solarmesh.cn
 
-The [aeraki.net](https://aeraki.net) website, built using [Hugo](https://gohugo.io) and hosted on [Netlify](https://www.netlify.com/).
+The [solarmesh.cn](https://solarmesh.cn) website, built using [Hugo](https://gohugo.io) and hosted on [Netlify](https://www.netlify.com/).
 
 ## Build
 

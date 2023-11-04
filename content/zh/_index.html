@@ -1,16 +1,18 @@
 ---
-# TODO(chalin): drop the `title` field once Hugo is fixed to use the site title
 title: solarmesh
 features:
+  - title: 全景流量视图
+    description: SolarMesh 通过捕获通信起止服务、网络协议、请求内容等数据，并基于捕获数据绘制以服务为节点的访问关系拓扑图，动态展示全局化的服务间实时通信状态。
+    icon: traffic-graph.png
   - title: 流量管理
     description: 请求负载均衡、熔断、动态路由、本地限流、流量镜像、全链路灰度等强大的流量管理能力。
-    icon: traffic.svg
-  - title: 可见性
+    icon: traffic.png
+  - title: 可观测性
     description: 提供丰富的代码无侵入观测能力：流量拓扑图、请求级别指标、访问日志、分布式追踪、监控告警。
-    icon: observability.svg
+    icon: observability.png
   - title: 多集群
     description: 支持混合云环境的统一管理。不仅支持容器集群，还提供虚拟机接入管理。
-    icon: extension.svg
+    icon: multiple-cluster.png
 ---
 
 {{< blocks/cover image_anchor="top" height="min" color="primary" >}}
