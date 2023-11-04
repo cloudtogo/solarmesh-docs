@@ -1,5 +1,5 @@
 ---
-title: Interface traffic monitoring
+title: Interface Traffic Monitoring
 subtitle:
 description: solarmesh supports interface-level traffic monitoring
 author: solarmesh

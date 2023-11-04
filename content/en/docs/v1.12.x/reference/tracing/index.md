@@ -1,5 +1,5 @@
 ---
-title: tracing
+title: Tracing
 subtitle:
 description: Use jaeger for tracing
 author: solarmesh

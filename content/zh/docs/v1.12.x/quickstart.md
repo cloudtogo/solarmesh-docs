@@ -1,44 +1,49 @@
 ---
 title: 快速开始
 weight: 900
-description: Get Aeraki up and running in less than 5 minutes!
+description: Get SolarMesh up in less than 5 minutes!
 ---
 
-请参照下面的步骤来安装、运行和测试 Aeraki：
+SolarMesh的基石是服务网格理论，是解决kubernetes网络问题的工具。 SolarMesh的底层架构由istio提供支持,istio是一种高度可配置且功能强大的开源服务网格平台，是目前行业最流行的服务网格实现方案。
 
- 1. 从 github 下载 Aeraki。
+## 基本概念
 
-    ```bash
-    git clone https://github.com/aeraki-mesh/aeraki.git
-    ```
+### 什么是服务网格(Service Mesh)？
 
- 2. 安装 Aeraki， Istio 和 demo 应用。
+Service Mesh 又译作 “服务网格”，作为服务间通信的基础设施层。服务网格是处理服务间通信的专用基础设施层。它负责通过包含现代云原生应用程序的复杂服务拓扑来可靠地传递请求。实际上，服务网格通常通过一组轻量级网络代理来实现，这些代理与应用程序一起部署，而不需要感知应用程序本身。
 
-    ```bash
-    make demo
-    ```
+服务网格（Service Mesh）通常用于描述应用程序的微服务网络以及应用之间的交互，是一个基础架构层。随着程序规模、程序复杂性的增长，服务网格越来越难以理解和管理。它的需求包括服务发现、负载均衡、故障恢复、指标收集、监控以及更加复杂的运维需求，例如 A/B 测试、金丝雀发布、限流、访问控制和端到端认证等。
 
-    请注意: Aeraki 要求启用 [Istio DNS 代理](https://istio.io/latest/docs/ops/configuration/traffic-management/dns-proxy/). 如果你在一个正在运行的 Istio 部署上安装 Aeraki，请确保打开了 Istio DNS 代理功能；你可以直接使用 ```make demo``` 命令来在一个全新的 K8s 集群上从头安装 Aeraki 和 Istio， ```make demo``` 会对 Istio 进行正确的配置。
- 3. 安装 aerakictl
+如果用一句话来解释什么是服务网格，可以将它比作是应用程序或者微服务间的 TCP/IP，负责服务之间的网络调用、限流、熔断和监控。对于编写应用程序来说一般无须关心 TCP/IP 这一层（比如通过 HTTP 协议的 RESTful 应用），使用服务网格无须关心服务之间原本是通过应用程序、框架实现的功能，比如 Spring Cloud、OSS，现在只要交给服务网格就可以了。
 
-    aerakictl 脚本工具封装了一些常用的 debug 命令，我们将在后续的教程中使用这些命令来查看应用程序和代理的信息。
+### 服务网格的特点
 
-    ```bash
-    git clone https://github.com/aeraki-mesh/aerakictl.git ~/aerakictl;source ~/aerakictl/aerakictl.sh
-    ```
+服务网格有如下几个特点：
 
- 4. 在浏览器中打开下面的网页，来查看 Aeraki 部署的应用程序和上报的请求指标数据。
+* 应用程序间通讯的中间层
+* 轻量级网络代理
+* 应用程序无感知
+* 解耦应用程序的重试、超时、监控、追踪和服务发现
 
-    - Kaili http://{istio-ingressgateway_external_ip}:20001
-    - Grafana http://{istio-ingressgateway_external_ip}:3000
-    - Prometheus http://{istio-ingressgateway_external_ip}:9090
- 
+### 服务网格为我们带来了什么？
+
+从云原生的大趋势上看，云原生的核心要点在抽象。就如同曾经从物理机抽象出虚拟机一样，云原生应用的本质是将所有基础设施从各自为战的应用本身中抽离，形成中间件级工具，例如网络。
+
+网络层整个的抽离使得我们可以对其进行标准化的统一管理，从而衍生出网络层解决问题的手段，这种网络层面的抽象使得我们无需再借助SDK的手段(如SpringCloud)去解决因为网络不稳定而衍生出的问题(超时、重试等)，SDK与语言是有一定的绑定关系的，在如今多语言并存的微服务时代SDK所提供的能力就略显不足了。
+
+服务网格的出现就是为了解决这方面的问题，抽象kubernetes的网络，并提供与语言无关的增强手段，是解决kubernetes网络问题的中间件。
+
+## 快速体验
+
+ 点击[>>在线demo体验地址>>](http://demo.solarmesh.cn/) 快速使用吧~
 
 ## 了解更多？
 
-点击下面的链接，了解更多 Aeraki 的相关功能：
+点击下面的链接，了解更多 SolarMesh 的相关功能：
 
-- [流量路由](/zh/docs/v1.x/tutorials/routing/) 
-- [本地限流](/zh/docs/v1.x/tutorials/local-rate-limit/)
-- [全局限流](/zh/docs/v1.x/tutorials/global-rate-limit//)
-- [开发一个自定义协议](/zh/docs/v1.x/tutorials/implement-a-custom-protocol/)
+- [灰度发布](/zh/docs/v1.12.x/tutorials/canary/)
+- [本地限流](/zh/docs/v1.12.x/tutorials/ratelimit/)
+- [黑白名单](/zh/docs/v1.12.x/tutorials/ap/)
+- [流量插件](/zh/docs/v1.12.x/tutorials/mirror/)
+- [故障注入](/zh/docs/v1.12.x/tutorials/fault/)
+- [流量镜像](/zh/docs/v1.12.x/tutorials/mirror/)

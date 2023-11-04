@@ -1,5 +1,5 @@
 ---
-title: Istio installation
+title: Istio Installation
 subtitle:
 description: How to install istio
 author: solarmesh

@@ -1,5 +1,5 @@
 ---
-title: traffic graph
+title: Traffic Graph
 subtitle:
 description: SolarMesh traffic graph enhances application observability and sets traffic policies for traffic management while observing.
 author: solarmesh

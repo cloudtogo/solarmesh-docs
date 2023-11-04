@@ -1,5 +1,5 @@
 ---
-title: Virtual machine management
+title: Virtual Machine Management
 subtitle:
 description: Add microservices on virtual machines to the service grid for traffic management
 author: solarmesh

@@ -1,5 +1,5 @@
 ---
-title: WASM plugin
+title: WASM Plugin
 subtitle:
 description: Use wasm to expand Istio governance capabilities
 author: solarmesh
