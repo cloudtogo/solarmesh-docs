@@ -41,3 +41,23 @@ You can also locally serve using [Docker](https://docker.com):
 ```console
 $ make docker-serve
 ```
+
+### Build Image
+
+```shell
+wget https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_extended_0.89.4_Linux-64bit.tar.gz
+tar -zxvf hugo_extended_0.89.4_Linux-64bit.tar.gz
+
+git clone https://github.com/mark8s/solarmesh-website.git
+cp hugo ./solarmesh-website
+cd solarmesh-website
+
+docker build -t ${Image} .
+```
+
+### Docker start
+
+```shell
+docker run -d -p 8888:8888 --restart always ${Image}
+```
+
