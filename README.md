@@ -41,11 +41,3 @@ You can also locally serve using [Docker](https://docker.com):
 ```console
 $ make docker-serve
 ```
-
-## Contributing
-
-We welcome issues and PRs! For details, see [Contributing](https://github.com/aeraki-mesh/aeraki/blob/master/CONTRIBUTING.md).
-
-If you submit a PR, Netlify will automatically create a [deploy preview](https://docs.netlify.com/site-deploys/deploy-previews/) so
-that you can view your changes. Once merged, Netlify automcatically deploys to
-the production site [aeraki.net](https://aeraki.net).

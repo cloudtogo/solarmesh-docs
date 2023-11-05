@@ -26,7 +26,7 @@ We configure the traffic limiting policy for the productpage.
 
 After submission, when we visit productpage, we will find that errors occur from time to time.
 
-![](img_2.png)(../../images/local-ratelimit-02.png)
+![](img_2.png)
 
 When we access it through curl, the result will be clearer:
 

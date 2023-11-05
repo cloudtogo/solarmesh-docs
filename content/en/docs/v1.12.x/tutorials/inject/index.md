@@ -71,13 +71,13 @@ You can see it after turning on the sidecar switch --> READY 2/2
 
 ```bash
 kubectl get po -n demo
-NAMESPACE NAME READY STATUS RESTARTS AGE
-demo details-v1-687cc78964-tpk2t 2/2 Running 0 14d
-demo productpage-v1-8488bbdbfd-wddv5 2/2 Running 0 14d
-demo ratings-v1-8ddf6c6c-xtx8d 2/2 Running 0 14d
-demo reviews-v1-f965c5c7c-tfx58 2/2 Running 0 14d
-demo reviews-v2-86b699c6bf-k6vft 2/2 Running 0 14d
-demo reviews-v3-85b6d84958-7xwc4 2/2 Running 0 14d
+NAMESPACE           NAME                                          READY   STATUS                  RESTARTS   AGE
+demo                details-v1-687cc78964-tpk2t                   2/2     Running   0          14d
+demo                productpage-v1-8488bbdbfd-wddv5               2/2     Running   0          14d
+demo                ratings-v1-8ddf6c6c-xtx8d                     2/2     Running   0          14d
+demo                reviews-v1-f965c5c7c-tfx58                    2/2     Running   0          14d
+demo                reviews-v2-86b699c6bf-k6vft                   2/2     Running   0          14d
+demo                reviews-v3-85b6d84958-7xwc4                   2/2     Running   0          14d
 ```
 
 ---

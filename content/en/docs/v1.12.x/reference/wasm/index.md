@@ -113,14 +113,13 @@ tinygo build -o filter.wasm -target=wasi -wasm-abi=generic .
 ```bash
 $ kubectl get po -n demo
 
-NAME READY STATUS RESTARTS AGE
-details-v1-5588477696-2sw7b 2/2 Running 0 8d
-productpage-v1-5bd6875444-j75dp 2/2 Running 0 8d
-ratings-v1-c9d5c65fc-l65mq 2/2 Running 0 8d
-reviews-v2-c789c7bdc-tsg7q 2/2 Running 0 8d
-reviews-v3-78944b866f-96nbw 2/2 Running 0 8d
+NAME                              READY   STATUS    RESTARTS   AGE
+details-v1-5588477696-2sw7b       2/2     Running   0          8d
+productpage-v1-5bd6875444-j75dp   2/2     Running   0          8d
+ratings-v1-c9d5c65fc-l65mq        2/2     Running   0          8d
+reviews-v2-c789c7bdc-tsg7q        2/2     Running   0          8d
+reviews-v3-78944b866f-96nbw       2/2     Running   0          8d
 ```
-
 
 
 5. Create envoyfilter

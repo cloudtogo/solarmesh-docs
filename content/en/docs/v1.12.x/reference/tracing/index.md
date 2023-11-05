@@ -29,8 +29,8 @@ After successful installation, the jaeger server will be installed in the cluste
 
 ```bash
 $ kubectl get svc -n service-mesh
-NAME TYPE CLUSTER-IP EXTERNAL-IP PORT(S) AGE
-jaeger ClusterIP 10.96.74.5 <none> 5775/UDP,6831/UDP,6832/UDP,5778/TCP,16686/TCP,14268/TCP,14250/TCP,9411/TCP 65s
+NAME               TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)                                                                      AGE
+jaeger             ClusterIP   10.96.74.5      <none>        5775/UDP,6831/UDP,6832/UDP,5778/TCP,16686/TCP,14268/TCP,14250/TCP,9411/TCP   65s
 ```
 
 |Port|Protocol|Component|Function|

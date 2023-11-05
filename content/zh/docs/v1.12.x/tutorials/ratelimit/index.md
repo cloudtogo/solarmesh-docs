@@ -26,7 +26,7 @@ keywords: [ratelimit]
 
 提交后，我们访问 productpage ，会发现它时不时就会出现错误。
 
-![](img_2.png)(../../images/local-ratelimit-02.png)
+![](img_2.png)
 
 我们通过 curl 访问，结果会更清晰：
 

@@ -131,11 +131,11 @@ EOF
 
 ```shell
 $ kubectl get po -n istio-system
-NAME READY STATUS RESTARTS AGE
-istio-egressgateway-76766bdd95-s7vrb 1/1 Running 0 25s
-istio-ingressgateway-bdf95b49b-xtc8r 1/1 Running 0 25s
-istiod-7c79849787-g74gn 1/1 Running 0 54s
+NAME                                   READY   STATUS    RESTARTS   AGE
+istio-egressgateway-76766bdd95-s7vrb   1/1     Running   0          25s
+istio-ingressgateway-bdf95b49b-xtc8r   1/1     Running   0          25s
+istiod-7c79849787-g74gn                1/1     Running   0          54s
 $ kubectl get po -n istio-operator
-NAME READY STATUS RESTARTS AGE
-istio-operator-6b78df4f7c-gpmn8 1/1 Running 0 2m29s
+NAME                              READY   STATUS    RESTARTS   AGE
+istio-operator-6b78df4f7c-gpmn8   1/1     Running   0          2m29s
 ```

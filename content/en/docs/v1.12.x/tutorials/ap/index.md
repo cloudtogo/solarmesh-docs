@@ -15,15 +15,15 @@ Integrating authentication and authorization from application code into SolarMes
 - Deploy sleep service to facilitate testing
 
 ```sh
-$ kubectl get po -n test -wide
-NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES
-details-v1-65b994c875-kgbp2 2/2 Running 0 9d 10.36.0.9 49-node1 <none> <none>
-productpage-v1-8bf7687-nxb5t 2/2 Running 0 9d 10.36.0.14 49-node1 <none> <none>
-ratings-v1-bcdd8c995-vfqj9 2/2 Running 0 9d 10.36.0.16 49-node1 <none> <none>
-reviews-v1-5f4866bd47-sxr6b 2/2 Running 0 9d 10.36.0.17 49-node1 <none> <none>
-reviews-v2-7b66cff677-kjl4v 2/2 Running 0 9d 10.44.0.7 46-node2 <none> <none>
-reviews-v3-6dddcfbb87-94zkd 2/2 Running 0 9d 10.44.0.9 46-node2 <none> <none>
-sleep-5c88f5b48d-tlmb5 2/2 Running 0 9d 10.36.0.18 49-node1 <none> <none>
+$ kubectl get po -n test -owide
+NAME                             READY   STATUS    RESTARTS   AGE   IP           NODE       NOMINATED NODE   READINESS GATES
+details-v1-65b994c875-kgbp2      2/2     Running   0          9d    10.36.0.9    49-node1   <none>           <none>
+productpage-v1-8bf7687-nxb5t     2/2     Running   0          9d    10.36.0.14   49-node1   <none>           <none>
+ratings-v1-bcdd8c995-vfqj9       2/2     Running   0          9d    10.36.0.16   49-node1   <none>           <none>
+reviews-v1-5f4866bd47-sxr6b      2/2     Running   0          9d    10.36.0.17   49-node1   <none>           <none>
+reviews-v2-7b66cff677-kjl4v      2/2     Running   0          9d    10.44.0.7    46-node2   <none>           <none>
+reviews-v3-6dddcfbb87-94zkd      2/2     Running   0          9d    10.44.0.9    46-node2   <none>           <none>
+sleep-5c88f5b48d-tlmb5           2/2     Running   0          9d    10.36.0.18   49-node1   <none>           <none>
 ```
 
 Let us first remember that the IP of sleep-5c88f5b48d-tlmb5 is ``10.36.0.18``. Later, we will set that only this IP cannot access our productpage-v1-8bf7687-nxb5t, simulating a blacklist scenario.

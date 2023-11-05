@@ -20,8 +20,8 @@ After successful installation, the grafana server will be installed in the clust
 
 ```bash
 kubectl get deploy -n service-mesh
-NAME READY UP-TO-DATE AVAILABLE AGE
-grafana 1/1 1 1 13h
+NAME               READY   UP-TO-DATE   AVAILABLE   AGE
+grafana            1/1     1            1           13h
 ```
 
 ### Extension
