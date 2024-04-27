@@ -13,8 +13,8 @@ Since the official istio image package belongs to docker.io, there may be restri
 > If you already have the installation package, omit the following steps
 
 ```shell
-wget http://release.solarmesh.cn/solar/v1.12/solar-v1.12.1-linux-amd64.tar.gz
-tar -xvf solar-v1.12.1-linux-amd64.tar.gz
+wget http://release.solarmesh.cn/solar/v1.13/solar-v1.13.1-linux-amd64.tar.gz
+tar -xvf solar-v1.13.1-linux-amd64.tar.gz
 export PATH=$PATH:$PWD/solar/bin/
 chmod +x $PWD/solar/bin/istioctl
 ```

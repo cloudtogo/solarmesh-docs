@@ -18,9 +18,9 @@ Before installing SolarMesh, review the following environmental requirements:
 The installation package includes command line tools and helm charts packages.
 ```shell
 # download
-wget http://release.solarmesh.cn/solar/v1.12/solar-v1.12.1-linux-amd64.tar.gz
+wget http://release.solarmesh.cn/solar/v1.13/solar-v1.13.1-linux-amd64.tar.gz
 # Unzip
-tar -xvf solar-v1.12.1-linux-amd64.tar.gz
+tar -xvf solar-v1.13.1-linux-amd64.tar.gz
 # empower
 export PATH=$PATH:$PWD/solar/bin/
 chmod +x $PWD/solar/bin/solarctl
@@ -29,7 +29,7 @@ chmod +x $PWD/solar/bin/solarctl
 Confirm version:
 ```shell
 $ solarctl version
-solarctl version: v1.12.1
+solarctl version: v1.13.1
 ```
 
 ## Install SolarMesh

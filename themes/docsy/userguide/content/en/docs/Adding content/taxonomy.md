@@ -8,7 +8,7 @@ description: >
   Structure the content using taxonomies like tags, categories, labels.
 ---
 
-Docsy supports Hugo's Taxonomies (see: https://gohugo.io/content-management/taxonomies/) in its docs and blog section. You can see the default layout and can test the behavior of the generated links on this page. 
+Docsy supports Hugo's Taxonomies (see: https://gohugo.io/content-management/taxonomies/) in its docs and blog section. You can see the default layout and can test the behavior of the generated links on this page.
 
 ## Terminology
 
@@ -55,11 +55,11 @@ taxonomyCloudTitle = ["Our Projects", "Tag Cloud"] # if used, must have same lan
 taxonomyPageHeader = ["tags", "categories"] # set taxonomyPageHeader = [] to hide taxonomies on the page headers
 ```
 
-The settings above would only show a taxonomy cloud for `projects` and `tags` (with the headlines "Our Projects" and "Tag Cloud") in Docsy's right sidebar and the assigned terms for the taxonomies `tags` and `categories` for each page. 
+The settings above would only show a taxonomy cloud for `projects` and `tags` (with the headlines "Our Projects" and "Tag Cloud") in Docsy's right sidebar and the assigned terms for the taxonomies `tags` and `categories` for each page.
 
-To disable any taxonomy cloud you have to set the Parameter `taxonomyCloud = []` resp. if you doesn't want to show the assigned terms you have to set `taxonomyPageHeader = []`. 
+To disable any taxonomy cloud you have to set the Parameter `taxonomyCloud = []` resp. if you doesn't want to show the assigned terms you have to set `taxonomyPageHeader = []`.
 
-As default the plural label of a taxonomy is used as it cloud title. You can overwrite the default cloud title with `taxonomyCloudTitle`. But if you do so, you have to define a manual title for each enabled taxonomy cloud (`taxonomyCloud` and `taxonomyCloudTitle` must have the same length!). 
+As default the plural label of a taxonomy is used as it cloud title. You can overwrite the default cloud title with `taxonomyCloudTitle`. But if you do so, you have to define a manual title for each enabled taxonomy cloud (`taxonomyCloud` and `taxonomyCloudTitle` must have the same length!).
 
 If you doesn't set the parameters `taxonomyCloud` resp. `taxonomyPageHeader` the taxonomy clouds resp. assigned terms for all defined taxonomies will be generated.
 ## Partials
@@ -84,15 +84,15 @@ This will gave you for each in the current page (resp. context) defined taxonomy
 <div class="taxonomy taxonomy-terms-article taxo-categories">
   <h5 class="taxonomy-title">Categories:</h5>
   <ul class="taxonomy-terms">
-    <li><a class="taxonomy-term" href="//localhost:1313/categories/taxonomies/" data-taxonomy-term="taxonomies"><span class="taxonomy-label">Taxonomies</span></a></li>
+    <li><a class="taxonomy-term" href="//solarmesh.cn/categories/taxonomies/" data-taxonomy-term="taxonomies"><span class="taxonomy-label">Taxonomies</span></a></li>
   </ul>
 </div>
 <div class="taxonomy taxonomy-terms-article taxo-tags">
   <h5 class="taxonomy-title">Tags:</h5>
   <ul class="taxonomy-terms">
-    <li><a class="taxonomy-term" href="//localhost:1313/tags/tagging/" data-taxonomy-term="tagging"><span class="taxonomy-label">Tagging</span></a></li>
-    <li><a class="taxonomy-term" href="//localhost:1313/tags/structuring-content/" data-taxonomy-term="structuring-content"><span class="taxonomy-label">Structuring Content</span></a></li>
-    <li><a class="taxonomy-term" href="//localhost:1313/tags/labelling/" data-taxonomy-term="labelling"><span class="taxonomy-label">Labelling</span></a></li>
+    <li><a class="taxonomy-term" href="//solarmesh.cn/tags/tagging/" data-taxonomy-term="tagging"><span class="taxonomy-label">Tagging</span></a></li>
+    <li><a class="taxonomy-term" href="//solarmesh.cn/tags/structuring-content/" data-taxonomy-term="structuring-content"><span class="taxonomy-label">Structuring Content</span></a></li>
+    <li><a class="taxonomy-term" href="//solarmesh.cn/tags/labelling/" data-taxonomy-term="labelling"><span class="taxonomy-label">Labelling</span></a></li>
   </ul>
 </div>
 ```
@@ -115,10 +115,10 @@ As an example this will gave you for following HTML markup for the taxonomy `cat
 <div class="taxonomy taxonomy-terms-cloud taxo-categories">
   <h5 class="taxonomy-title">Cloud of Categories</h5>
   <ul class="taxonomy-terms">
-    <li><a class="taxonomy-term" href="//localhost:1313/categories/category-1/" data-taxonomy-term="category-1"><span class="taxonomy-label">category 1</span><span class="taxonomy-count">3</span></a></li>
-    <li><a class="taxonomy-term" href="//localhost:1313/categories/category-2/" data-taxonomy-term="category-2"><span class="taxonomy-label">category 2</span><span class="taxonomy-count">1</span></a></li>
-    <li><a class="taxonomy-term" href="//localhost:1313/categories/category-3/" data-taxonomy-term="category-3"><span class="taxonomy-label">category 3</span><span class="taxonomy-count">2</span></a></li>
-    <li><a class="taxonomy-term" href="//localhost:1313/categories/category-4/" data-taxonomy-term="category-4"><span class="taxonomy-label">category 4</span><span class="taxonomy-count">6</span></a></li>
+    <li><a class="taxonomy-term" href="//solarmesh.cn/categories/category-1/" data-taxonomy-term="category-1"><span class="taxonomy-label">category 1</span><span class="taxonomy-count">3</span></a></li>
+    <li><a class="taxonomy-term" href="//solarmesh.cn/categories/category-2/" data-taxonomy-term="category-2"><span class="taxonomy-label">category 2</span><span class="taxonomy-count">1</span></a></li>
+    <li><a class="taxonomy-term" href="//solarmesh.cn/categories/category-3/" data-taxonomy-term="category-3"><span class="taxonomy-label">category 3</span><span class="taxonomy-count">2</span></a></li>
+    <li><a class="taxonomy-term" href="//solarmesh.cn/categories/category-4/" data-taxonomy-term="category-4"><span class="taxonomy-label">category 4</span><span class="taxonomy-count">6</span></a></li>
   </ul>
 </div>
 ```

@@ -18,9 +18,9 @@ description: SolarMesh安装说明.
 安装包中包含命令行工具和helm charts包。
 ```shell
 # 下载
-wget http://release.solarmesh.cn/solar/v1.12/solar-v1.12.1-linux-amd64.tar.gz
+wget http://release.solarmesh.cn/solar/v1.13/solar-v1.13.1-linux-amd64.tar.gz
 # 解压
-tar -xvf solar-v1.12.1-linux-amd64.tar.gz
+tar -xvf solar-v1.13.1-linux-amd64.tar.gz
 # 赋权
 export PATH=$PATH:$PWD/solar/bin/
 chmod +x $PWD/solar/bin/solarctl
@@ -29,7 +29,7 @@ chmod +x $PWD/solar/bin/solarctl
 确认版本:
 ```shell
 $ solarctl version
-solarctl version: v1.12.1
+solarctl version: v1.13.1
 ```
 
 ## 安装 SolarMesh
