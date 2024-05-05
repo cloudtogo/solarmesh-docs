@@ -87,8 +87,9 @@ params:
   # This menu appears only if you have at least one [params.versions] set.
   version_menu: Versions
   versions:
-    latest: v1.12.x
+    latest: v1.13.x
     all:
+      - v1.13.x
       - v1.12.x
     deprecation_warning: |-
       the documentation is no longer actively maintained.
@@ -162,11 +163,11 @@ outputs:
 menu:
   main:
     - name: Docs
-      url: /docs/v1.12.x/
+      url: /docs/v1.13.x/
       weight: -10
     - name: Blog
       pageref: /blog/
     - name: Install
-      url: /docs/v1.12.x/install/
+      url: /docs/v1.13.x/install/
     - name: Demo
       url: http://demo.solarmesh.cn

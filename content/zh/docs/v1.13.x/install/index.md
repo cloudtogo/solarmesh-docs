@@ -18,9 +18,9 @@ description: SolarMesh安装说明.
 安装包中包含命令行工具和helm charts包。
 ```shell
 # 下载
-wget http://release.solarmesh.cn/solar/v1.12/solar-v1.12.1-linux-amd64.tar.gz
+wget http://release.solarmesh.cn/solar/v1.13/solar-v1.13.1-linux-amd64.tar.gz
 # 解压
-tar -xvf solar-v1.12.1-linux-amd64.tar.gz
+tar -xvf solar-v1.13.1-linux-amd64.tar.gz
 # 赋权
 export PATH=$PATH:$PWD/solar/bin/
 chmod +x $PWD/solar/bin/solarctl
@@ -29,7 +29,7 @@ chmod +x $PWD/solar/bin/solarctl
 确认版本:
 ```shell
 $ solarctl version
-solarctl version: v1.12.1
+solarctl version: v1.13.1
 ```
 
 ## 安装 SolarMesh
@@ -88,13 +88,7 @@ solar-operator         solar-operator-78d69dc876-sl7rl                    1/1   
 
 #### 3. 安装Addons
 
-1. 快速自定义功能。资源清单在安装包中，路径为：/solar/manifests/addon/
-```shell
-helm install kube-shortcut kube-shortcut -n kube-shortcut-system
-kubectl apply -f kube-shortcut/files/solarmesh.yaml
-```
-
-2. 链路追踪和监控告警
+##### 链路追踪和监控告警
 ```shell
 $ solarctl install grafana --name cluster01
 $ solarctl install jaeger --name cluster01
@@ -103,10 +97,6 @@ $ solarctl install jaeger --name cluster01
 检查安装状态：
 
 ```shell
-$ kubectl get po -n kube-shortcut-system
-NAME                                               READY   STATUS    RESTARTS   AGE
-kube-shortcut-controller-manager-67d5d59f6-hq7nd   2/2     Running   0          2m39s
-
 $ kubectl get po -n service-mesh
 NAME                                READY   STATUS    RESTARTS   AGE
 grafana-5d5ff44cd6-8wdj9            1/1     Running   0          1m
@@ -131,29 +121,6 @@ solar-controller   ClusterIP   10.96.202.179   <none>        8080/TCP   28m
 访问：
 
 ![](img.png)
-
-#### 5. 验证功能
-
-使用 solarctl 安装 bookinfo示例项目到测试用的namespace当中
-
-```shell
-solarctl install bookinfo -n demo
-
-$ kubectl get po -n demo
-NAME                              READY   STATUS    RESTARTS   AGE
-details-v1-8d56bfc84-qj7n9        1/1     Running   0          9m42s
-productpage-v1-7cbccd8fc4-b84qc   1/1     Running   0          9m42s
-ratings-v1-585fc5fbdd-x2nkk       1/1     Running   0          9m42s
-reviews-v1-dbbb74b84-ktn7j        1/1     Running   0          9m42s
-reviews-v2-75c48c6c58-bjts2       1/1     Running   0          9m42s
-reviews-v3-68cd99b996-5n29d       1/1     Running   0          9m42s
-```
-
-进入SolarMesh的Namespaces页面，打开自动接入的开关。
-
-访问bookinfo的 productpage页面，查看 solarmesh 流量视图,证明SolarMesh现在已经安装成功了。
-
-![](img_1.png)
 
 ## 高可用和水平扩展
 

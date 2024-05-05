@@ -18,9 +18,9 @@ Before installing SolarMesh, review the following environmental requirements:
 The installation package includes command line tools and helm charts packages.
 ```shell
 # download
-wget http://release.solarmesh.cn/solar/v1.12/solar-v1.12.1-linux-amd64.tar.gz
+wget http://release.solarmesh.cn/solar/v1.13/solar-v1.13.1-linux-amd64.tar.gz
 # Unzip
-tar -xvf solar-v1.12.1-linux-amd64.tar.gz
+tar -xvf solar-v1.13.1-linux-amd64.tar.gz
 # empower
 export PATH=$PATH:$PWD/solar/bin/
 chmod +x $PWD/solar/bin/solarctl
@@ -29,7 +29,7 @@ chmod +x $PWD/solar/bin/solarctl
 Confirm version:
 ```shell
 $ solarctl version
-solarctl version: v1.12.1
+solarctl version: v1.13.1
 ```
 
 ## Install SolarMesh
@@ -88,13 +88,7 @@ solar-operator         solar-operator-78d69dc876-sl7rl                    1/1   
 
 #### 3. Install Addons
 
-1. Quick customization function. The resource list is in the installation package, the path is: /solar/manifests/addon/
-```shell
-helm install kube-shortcut kube-shortcut -n kube-shortcut-system
-kubectl apply -f kube-shortcut/files/solarmesh.yaml
-```
-
-2. Tracing and monitoring alarms
+##### Tracing and monitoring alarms
 ```shell
 $ solarctl install grafana --name cluster01
 $ solarctl install jaeger --name cluster01
@@ -131,29 +125,6 @@ solar-controller   ClusterIP   10.96.202.179   <none>        8080/TCP   28m
 access:
 
 ![](img.png)
-
-#### 5. Verification function
-
-Use solarctl to install the bookinfo sample project into the test namespace.
-
-```shell
-solarctl install bookinfo -n demo
-
-$ kubectl get po -n demo
-NAME                              READY   STATUS    RESTARTS   AGE
-details-v1-8d56bfc84-qj7n9        1/1     Running   0          9m42s
-productpage-v1-7cbccd8fc4-b84qc   1/1     Running   0          9m42s
-ratings-v1-585fc5fbdd-x2nkk       1/1     Running   0          9m42s
-reviews-v1-dbbb74b84-ktn7j        1/1     Running   0          9m42s
-reviews-v2-75c48c6c58-bjts2       1/1     Running   0          9m42s
-reviews-v3-68cd99b996-5n29d       1/1     Running   0          9m42s
-```
-
-Enter the Namespaces page of SolarMesh and turn on the automatic access switch.
-
-Visit the productpage of bookinfo and view the solarmesh traffic view to prove that SolarMesh has been installed successfully.
-
-![](img_1.png)
 
 ## High availability and horizontal expansion
 
@@ -225,10 +196,10 @@ spec:
 
 Click on the link below to learn more about SolarMesh related features:
 
-- [Canary Release](/docs/v1.12.x/tutorials/canary/)
-- [Local rateLimit](/docs/v1.12.x/tutorials/ratelimit/)
-- [Black and White List](/docs/v1.12.x/tutorials/ap/)
-- [Traffic Plugin](/docs/v1.12.x/tutorials/mirror/)
-- [Fault Injection](/docs/v1.12.x/tutorials/fault/)
-- [Traffic Mirror](/docs/v1.12.x/tutorials/mirror/)
+- [Canary Release](/docs/v1.13.x/tutorials/canary/)
+- [Local rateLimit](/docs/v1.13.x/tutorials/ratelimit/)
+- [Black and White List](/docs/v1.13.x/tutorials/ap/)
+- [Traffic Plugin](/docs/v1.13.x/tutorials/mirror/)
+- [Fault Injection](/docs/v1.13.x/tutorials/fault/)
+- [Traffic Mirror](/docs/v1.13.x/tutorials/mirror/)
 
