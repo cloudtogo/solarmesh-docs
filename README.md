@@ -48,7 +48,7 @@ $ make docker-serve
 wget https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_extended_0.89.4_Linux-64bit.tar.gz
 tar -zxvf hugo_extended_0.89.4_Linux-64bit.tar.gz
 
-git clone https://github.com/mark8s/solarmesh-website.git
+git clone https://github.com/cloudtogo/solarmesh-docs.git
 cp hugo ./solarmesh-website
 cd solarmesh-website
 

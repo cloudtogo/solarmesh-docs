@@ -66,11 +66,11 @@ params:
     一个高效可视化微服务治理平台
 
     # Repository configuraion (URLs for in-page links to opening issues and suggesting changes)
-  github_repo: https://github.com/mark8s/solarmesh-website
+  github_repo: https://github.com/cloudtogo/solarmesh-docs
   github_branch: main
 
   # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-  github_project_repo: https://github.com/mark8s/solarmesh
+  github_project_repo: https://github.com/cloudtogo/solarmesh-docs
 
   # Enable Algolia DocSearch
   algolia_docsearch: false
@@ -113,11 +113,11 @@ params:
       # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
       'yes': >-
         Glad to hear it! Please <a
-        href="https://github.com/mark8s/solarmesh-website/issues/new">tell us how we
+        href="https://github.com/cloudtogo/solarmesh-docs/issues/new">tell us how we
         can improve</a>.
       'no': >-
         Sorry to hear that. Please <a
-        href="https://github.com/mark8s/solarmesh-website/issues/new">tell us how we
+        href="https://github.com/cloudtogo/solarmesh-docs/issues/new">tell us how we
         can improve</a>.
 
     # Adds a reading time to the top of each doc.
@@ -143,7 +143,7 @@ params:
         url: mailto:yileo2019@gmail.com
         icon: fas fa-envelope
       - name: SolarMesh on GitHub
-        url: https://github.com/mark8s/solarmesh-website
+        url: https://github.com/cloudtogo/solarmesh-docs
         icon: fab fa-github
   # [params.logos]
 
