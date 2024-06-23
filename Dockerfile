@@ -1,4 +1,4 @@
-FROM node:14
+FROM registry.cn-shenzhen.aliyuncs.com/solarmesh/node:14
 WORKDIR /app
 COPY . /app
 RUN npm cache clean --force
