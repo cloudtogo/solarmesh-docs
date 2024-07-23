@@ -61,7 +61,7 @@ markup:
 # Everything below this are Site Params
 
 params:
-  copyright: CloudToGo.cn 深圳行云创新科技有限公司
+  copyright: CloudToGo.cn 深圳行云创新科技有限公司 版权所有
   description: >-
     一个高效可视化微服务治理平台
 

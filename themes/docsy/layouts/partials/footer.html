@@ -10,19 +10,15 @@
         {{ end }}
         {{ end }}
       </div>
-      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+     <!-- <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
         {{ with $links }}
         {{ with index . "developer"}}
         {{ template "footer-links-block"  . }}
         {{ end }}
-        {{ end }}
+        {{ end }}-->
       </div>
-      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        {{ with .Site.Params.copyright }}<small class="text-white">&copy; 2016-{{ now.Year}} {{ .}}<!-- {{ T "footer_all_rights_reserved" }} --></small>{{ end }}
-        {{ with .Site.Params.privacy_policy }}<small class="ml-1"><a href="{{ . }}" target="_blank" rel="noopener">{{ T "footer_privacy_policy" }}</a></small>{{ end }}
-	{{ if not .Site.Params.ui.footer_about_disable }}
-		{{ with .Site.GetPage "about" }}<p class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
-	{{ end }}
+      <div class="col-12 col-sm-12 text-center py-2 order-sm-2">
+        {{ with .Site.Params.copyright }}<small class="text-white">Copyright &copy;2016-{{ now.Year}} {{ .}}|<a href="https://beian.miit.gov.cn/#/Integrated/recordQuery " target="_blank" ondragstart="return false">粤ICP备17026550号-3</a>| 电话总机：400-008-9160 市场合作：marketing@cloudtogo.cn<!-- {{ T "footer_all_rights_reserved" }} --></small>{{ end }}
       </div>
     </div>
    <!-- <div class="row text-center text-white small">
