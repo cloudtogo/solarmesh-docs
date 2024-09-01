@@ -42,6 +42,7 @@ ServiceMesh 又译作 “服务网格”，作为服务间通信的基础设施�
 
 点击下面的链接，了解更多 SolarMesh 的相关功能：
 
+- [AI插件](/zh/docs/v1.13.x/tutorials/wasmplugin/)
 - [灰度发布](/zh/docs/v1.13.x/tutorials/canary/)
 - [本地限流](/zh/docs/v1.13.x/tutorials/ratelimit/)
 - [黑白名单](/zh/docs/v1.13.x/tutorials/ap/)

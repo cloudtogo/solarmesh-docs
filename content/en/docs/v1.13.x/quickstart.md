@@ -42,6 +42,7 @@ Click [>>Online demo experience address>>](http://demo.solarmesh.cn/) to use it 
 
 Click on the link below to learn more about SolarMesh related features:
 
+- [AI Plugins](/docs/v1.13.x/tutorials/wasmplugin/)
 - [Canary Release](/docs/v1.13.x/tutorials/canary/)
 - [Local rateLimit](/docs/v1.13.x/tutorials/ratelimit/)
 - [Black and White List](/docs/v1.13.x/tutorials/ap/)

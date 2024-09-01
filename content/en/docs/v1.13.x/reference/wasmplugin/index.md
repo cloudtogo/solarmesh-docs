@@ -41,7 +41,7 @@ In the traffic view, click on the service and select the traffic plugin you need
 
 When applying a plugin, you need to fill in the following parameters:
 
-- Plugin Execution Stage: Determines where in the filter chain this WasmPlugin is to be injected. Execution stage order: Authentication > Authorization > Statistics > Default.
+- Plugin Execution Phase: Determines where in the filter chain this WasmPlugin is to be injected. Execution stage order: Authentication > Authorization > Statistics > Default.
 - Plugin Execution Priority: If there are multiple plugins, you may need to set priorities. Higher numbers indicate higher priority, ranging from 1 to 1000.
 - PluginConfig: Plugin configuration, which can be referenced within the plugin.
 - VmConfig: Plugin virtual machine configuration, typically environment variables.
