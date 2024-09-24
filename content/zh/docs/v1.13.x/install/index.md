@@ -105,9 +105,9 @@ jaeger-5447b6ddcc-z4ng7             1/1     Running   0          1m
 
 ### 3. 完成集群初始化
 
-注册集群kubeConfig到solarmesh
+注册集群kubeConfig到solarmesh, kubeConfig地址不能为127.0.0.1
 ```shell
-solarctl register --kube-config .kube/config --name cluster01
+solarctl register --kube-config $HOME/.kube/config --name cluster01
 ```
 
 #### 4. 安装验证

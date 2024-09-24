@@ -109,9 +109,9 @@ jaeger-5447b6ddcc-z4ng7             1/1     Running   0          1m
 
 ### 3. Complete cluster initialization
 
-Register cluster kubeConfig to solarmesh
+Register cluster kubeConfig to solarmesh, and the address of kubeConfig cannot be 127.0.0.1
 ```shell
-solarctl register --kube-config .kube/config --name cluster01
+solarctl register --kube-config $HOME/.kube/config --name cluster01
 ```
 
 #### 4. Installation verification

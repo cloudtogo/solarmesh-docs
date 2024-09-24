@@ -32,5 +32,6 @@ RUN npm install netlify-cli@16.0.0 -g --unsafe-perm=true --allow-root
 #    rm hugo_extended_0.89.4_Linux-64bit.tar.gz
 
 RUN mv hugo /usr/local/bin/hugo
+RUN npm run build
 
 CMD ["npm", "run", "serve"]
